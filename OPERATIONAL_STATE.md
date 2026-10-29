@@ -86,3 +86,16 @@ If extending further, preserve all three stages, original case, and sprite linea
 - Matched render-cost proof: `src/bench_v5.py` compares frozen OMNI IV and OMNI V across 4 environments x 240 draws, twice. Baseline median 0.1ms/p95 0.3ms; revised median 0.1-0.2ms/p95 0.3ms, visitor ghost median 0.2ms/p95 0.3-0.5ms. p99 variable. This is render() only, not physical hardware FPS, power or thermal proof.
 - NOT VERIFIED: direct browser `file://` launching (test policy restriction), real iOS Safari/Android/gamepad hardware, long-duration memory and thermal performance. No Git source repository exists in this artifact directory; no commits/push/CI/deployment claimed. Manual exported records are durable only if the user saves the downloaded file.
 - Validation requirement for future changes: preserve v1 replay compatibility and atomic import validation, original campaign/bonus locks, Classic navigation, and test source+standalone parity. Offline and no-tracking invariants remain absolute.
+
+## GitHub publication — 2026-10-29
+
+- **Canonical repository:** `westkitty/SNES_Dex` (public).
+- **Local Git checkout:** `/Users/andrew/Documents/SNES_Dex` on MacBook Air, isolated from other repositories.
+- **Published entry point:** repository-root `index.html` on branch `main`.
+- **GitHub Pages:** `https://westkitty.github.io/SNES_Dex/` (root of `main`, legacy branch build).
+- **Initial publication commit:** `899fd8ff0f3edebceb6795b06e4f7ff8852210fc`.
+- **Verified release SHA-256:** `1bc8a0f2e815f50c0b18e0b78a353d8878ee8cd107f11dd8708a5e61d6bed92b`. Local `index.html`, clean rebuilt output and HTTP 200 Pages response matched.
+- **Source restoration:** `src/game.js`, `src/index.html` and embedded Classic Case were reconstructed from the byte-verified cartridge and compared against the preserved originals. Runtime images were decoded from the same cartridge.
+- **Protected project identity:** `AGENTS.md` binds this workspace to `westkitty/SNES_Dex`.
+- **Not verified by this publication check:** physical mobile browsers, real gamepad, long-duration performance, and an interactive hosted-browser playthrough. Pre-publication Chromium QA remains historical evidence, not a fresh hosted-runtime certification.
+- **Deployment procedure:** rebuild `python3 src/build.py`, validate output, update root `index.html` when intentionally changed, commit and push `main`; confirm GitHub Pages built and the served game matches the commit.

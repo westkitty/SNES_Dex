@@ -4,7 +4,7 @@
 
 **Play:** https://westkitty.github.io/SNES_Dex/
 
-Open \`index.html\` to play the standalone cartridge offline. It contains the complete game and requires no external libraries, accounts, trackers, or network calls.
+Open `index.html` to play the standalone cartridge offline. It contains the complete game and requires no external libraries, accounts, trackers, or network calls.
 
 ## Adventure
 
@@ -28,15 +28,15 @@ On-screen touch buttons and standard gamepad input are also available.
 
 ## Source and GitHub Pages
 
-\`index.html\` is the exact playable **OMNI V** release, checked byte-for-byte before import. Pages serves \`main\` from the repository root.
+`index.html` is the exact playable **OMNI V** release, checked byte-for-byte before import. Pages serves `main` from the repository root.
 
-The editable source lives in \`src/game.js\`, \`src/index.html\`, \`src/build.py\`, \`assets/\`, and \`original/\`. To rebuild from source:
+The editable source lives in `src/game.js`, `src/index.html`, `src/build.py`, `assets/`, and `original/`. To rebuild from source:
 
-\`\`\`sh
+```sh
 python3 src/build.py
 cmp index.html Dexter_The_Long_Way_Home.html
-\`\`\`
+```
 
-That comparison must match for this initial release. On intentional future changes, inspect and test the rebuilt output, then replace \`index.html\` with it before committing. No bundler or npm packages are required.
+That comparison must match for this initial release. On intentional future changes, inspect and test the rebuilt output, then replace `index.html` with it before committing. No bundler or npm packages are required.
 
-\`original/\` includes the source sprite art and preserved Classic Case. \`QA.md\`, \`OPERATIONAL_STATE.md\`, and \`RELEASE_NOTES.md\` document earlier verification and remaining device-test limitations. The development-only Playwright test harness is retained in the separate OMNI V full development archive, not in this minimal Pages repository.
+`original/` includes the source sprite art and preserved Classic Case. `QA.md`, `OPERATIONAL_STATE.md`, and `RELEASE_NOTES.md` document earlier verification and remaining device-test limitations. The development-only Playwright test harness is retained in the separate OMNI V full development archive, not in this minimal Pages repository.
