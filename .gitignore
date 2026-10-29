@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+_extract_source.py
+Dexter_The_Long_Way_Home.html
